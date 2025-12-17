@@ -1,4 +1,4 @@
-# 🧠 Complete a SQL Join Lab
+# Complete a SQL Join Lab
 
 ### My Third Cyber Lab: Combining Data with SQL  
 *Adapted from the Google Cybersecurity Professional Certificate*
