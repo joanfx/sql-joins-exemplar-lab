@@ -87,5 +87,3 @@ This skill helps analysts detect inconsistencies or anomalies, such as:
 ---
 
 **Author:** Joan 
-**Lab:** Complete a SQL Join  
-**Course:** Google Cybersecurity Professional Certificate
