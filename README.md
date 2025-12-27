@@ -4,10 +4,8 @@
 
 ---
 
-## Scenario
-As a security analyst, I was tasked with performing a comprehensive audit of the organization's assets and user access logs. By utilizing INNER, LEFT, and RIGHT JOINS, I correlated employee data with machine assignments to identify critical security gaps, such as unregistered devices and hardware not currently assigned to authorized personnel.
-
-For this exercise, I used different types of joins (`INNER`, `LEFT`, and `RIGHT`) to reveal both matching and non-matching data across tables.
+## Scenario:
+As a security analyst, I was tasked with performing a comprehensive audit of the organization's assets and user access logs. By utilizing `INNER`, `LEFT`, and `RIGHT JOINS`, I correlated employee data with machine assignments to identify critical security gaps, such as unregistered devices and hardware not currently assigned to authorized personnel.
 
 ---
 
