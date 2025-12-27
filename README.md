@@ -61,24 +61,16 @@ INNER JOIN log_in_attempts ON employees.username = log_in_attempts.username;
 
 ---
 
-## Key Takeaways
-Through this lab, I practiced using **SQL joins** to correlate information across multiple datasets.  
-This skill helps analysts detect inconsistencies or anomalies, such as:
-- Employees using unregistered devices
-- Machines not tied to any user
-- Login attempts from unexpected accounts
-
-**Operators used:**
-- `INNER JOIN` → Returns only matched records  
-- `LEFT JOIN` → Returns all from left table + matched from right  
-- `RIGHT JOIN` → Returns all from right table + matched from left  
-
----
-
 ## What I Learned
-- How to merge datasets efficiently for cybersecurity analysis  
-- How different join types impact investigation results  
-- Why joins are vital in identifying correlations between systems and users
+- Cross-Platform Data Correlation: Used `INNER`, `LEFT`, and `RIGHT JOINS` to merge security datasets into a single, actionable investigative view.
+  
+- Asset Integrity Auditing: Developed a logical workflow for identifying "shadow IT" by isolating machines that lack valid employee assignments in the relational database.
+  
+- Identity Mapping: Successfully correlated user identities with login events to provide full-stack visibility into which specific personnel accessed hardware during incident windows.
+  
+- Gap Analysis: Leveraged specific join types to detect unprovisioned employees, ensuring that all active personnel are mapped to authorized organizational assets.
+
+- Operational Forensics: Gained hands-on experience in how relational data structures serve as the backbone for incident response and hardware lifecycle management.
 
 ---
 
