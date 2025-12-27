@@ -1,18 +1,17 @@
-# Complete a SQL Join Lab
+# Relational Data Correlation & Asset Auditing (SQL)
 
-### My Third Cyber Lab: Combining Data with SQL  
+### Technical Objective: Correlating Disparate Datasets for Incident Response  
 
 ---
 
 ## Scenario
-As a **security analyst**, I often need to investigate systems by combining data from multiple sources.  
-This lab focuses on using **SQL joins** to correlate employee data, machine data, and login attempts to uncover relationships between entities during an investigation.
+As a security analyst, I was tasked with performing a comprehensive audit of the organization's assets and user access logs. By utilizing INNER, LEFT, and RIGHT JOINS, I correlated employee data with machine assignments to identify critical security gaps, such as unregistered devices and hardware not currently assigned to authorized personnel.
 
 For this exercise, I used different types of joins (`INNER`, `LEFT`, and `RIGHT`) to reveal both matching and non-matching data across tables.
 
 ---
 
-## Task 1: Match Employees to Machines
+## Task 1: Verifying Authorized Asset Assignments
 **Goal:** Display all employees matched with the machines they use.  
 **Fix:** Used an `INNER JOIN` to retrieve rows that exist in both the `employees` and `machines` tables.
 
@@ -25,7 +24,7 @@ INNER JOIN employees ON machines.device_id = employees.device_id;
 
 ---
 
-## Task 2: Machines Without Assigned Employees
+## Task 2: Identifying Unassigned/Rogue Machines
 **Goal:** Display all machines, even those not currently assigned to an employee.  
 **Fix:** Used a `LEFT JOIN` so all machines appear, regardless of whether they match a record in `employees`.
 
@@ -38,7 +37,7 @@ LEFT JOIN employees ON machines.device_id = employees.device_id;
 
 ---
 
-## Task 3: Employees Without Assigned Machines
+## Task 3: Auditing Employees Without Provisioned Hardware
 **Goal:** Retrieve employees who don’t currently have assigned machines.  
 **Fix:** Used a `RIGHT JOIN` so all employees are included, even those without a corresponding record in `machines`.
 
@@ -51,7 +50,7 @@ RIGHT JOIN employees ON machines.device_id = employees.device_id;
 
 ---
 
-## Task 4: Employees with Login Attempts
+## Task 4: Correlating User Identities with Login Events
 **Goal:** Combine the `employees` table with `log_in_attempts` to correlate users with their login data.  
 **Fix:** Used an `INNER JOIN` on the `username` field.
 
@@ -85,4 +84,6 @@ This skill helps analysts detect inconsistencies or anomalies, such as:
 
 ---
 
-**Author:** Joan 
+**Author:** Joan
+
+---
